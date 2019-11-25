@@ -13,6 +13,7 @@ public class Main {
 
         Pattern1();
 Pattern2();
+Pattern3();
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -49,13 +50,20 @@ Pattern2();
     public static void Pattern2(){
         for(int e = 1; e<7; e++) {
 
-            for (int row = 1; row < 6; row++) {
+            for (int row = 1; row < 8; row++) {
 System.out.print(e);
             }
 System.out.println();
         }
 
     }
-
+public static void Pattern3(){
+        for(int e = 1;e<7;e++){
+            for (int row = 1;row<7;row++ ) {
+                System.out.print(row);
+            }
+            System.out.println();
+        }
+}
 
 }
