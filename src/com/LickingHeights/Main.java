@@ -11,14 +11,22 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-        Pattern1();
-        Pattern2();
-        Pattern3();
-        Pattern4();
-        Pattern5();
-        System.out.println("The sum of the array is"+ sum(array));
-    System.out.println("The minnimum of the array is " + minnimum(array));
-System.out.println("The maximum of the array is "+maximum(array));
+//        Pattern1();
+//        Pattern2();
+//        Pattern3();
+//        Pattern4();
+//        Pattern5();
+//        System.out.println("The sum of the array is "+ sum(array));
+//    System.out.println("The minnimum of the array is " + minnimum(array));
+      //  printArray(array);
+//System.out.println("The maximum of the array is "+maximum(array));
+String[]adjectives = {"aggressive","agreeable","ambitious","brave"};
+String [] places = {"Taj mahal","Mt house","Iowa","Ohio "};
+String [] people = {"Barack Obama","Drake","Cheryl","William"};
+String [] verbs = {"steal","Throw","Woke","Tell"};
+String [] times = {"12:45","1:30","4:30","6:30"};
+String [] things = {"Clock","Food","Golf","Football"};
+
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -96,44 +104,41 @@ System.out.println("The maximum of the array is "+maximum(array));
         }
         return 0;
     }
-public static int sum(int[]array){
-int sum = 0;
-for (int i = 0 ; i<array.length; i++){
-    sum += array[i];
+
+    public static int sum(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
 
 
-}
-
-
-
-
-
-
+        }
 
 
         return sum;
 
     }
-public static int minnimum(int[]array){
-       int minnimum= array[0] ;
-    for (int i = 1 ; i<array.length; i++){
-       if (minnimum>array[i]) {
-           minnimum = array[i];
-       }
+
+    public static int minnimum(int[] array) {
+        int minnimum = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (minnimum > array[i]) {
+                minnimum = array[i];
+            }
+        }
+        return minnimum;
     }
-    return minnimum;
-}
 
-public static int maximum(int[]array) {
-    int maximum = array[0];
-    for (int i = 1; i < array.length; i++)
-        if (maximum < array[i])
-            maximum = array[i];
-
-
+    public static int maximum(int[] array) {
+        int maximum = array[0];
+        for (int i = 1; i < array.length; i++)
+            if (maximum < array[i])
+                maximum = array[i];
 
 
         return maximum;
+    }
+
+
 }
 
 
@@ -144,10 +149,5 @@ public static int maximum(int[]array) {
 
 
 
-
-
-
-
-
-
+    }
 }
