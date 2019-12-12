@@ -22,17 +22,22 @@ public class Main {
 //    System.out.println("The minnimum of the array is " + minnimum(array));
         //  printArray(array);
 //System.out.println("The maximum of the array is "+maximum(array));
-        String[] adjectives = {"aggressive", "agreeable", "ambitious", "brave"};
-        String[] places = {"Taj mahal", "My house", "Iowa", "Ohio "};
-        String[] people = {"Barack Obama", "Drake", "Cheryl", "William"};
-        String[] verb = {"sound", "dislike", "recognise", "appear"};
-        String[] times = {"12:45", "1:30", "4:30", "6:30"};
-        String[] things = {"Clock", "Food", "Golf", "Football"};
-System.out.println(randomword(people));
-System.out.print("I was"+" "+ sentencegenerator(verb)+" "+" " +"down the"+" "+ sentencegenerator(places)+" ");
-System.out.println("Around"+" "+sentencegenerator(times)+" "+"with my bestfriend"+" "+sentencegenerator(people)+" ");
-System.out.print("And we"+" "+sentencegenerator(verb)+" "+" "+"a"+" "+sentencegenerator(adjectives)+" "+" "+sentencegenerator(things)+" ");
-System.out.print("That was"+" "+sentencegenerator(verb)+" "+sentencegenerator(things)+" ");
+        //String[] adjectives = {"aggressive", "agreeable", "ambitious", "brave"};
+       // String[] places = {"Taj mahal", "My house", "Iowa", "Ohio "};
+       // String[] people = {"Barack Obama", "Drake", "Cheryl", "William"};
+       // String[] verb = {"sound", "dislike", "recognise", "appear"};
+       // String[] times = {"12:45", "1:30", "4:30", "6:30"};
+        //String[] things = {"Clock", "Food", "Golf", "Football"};
+        //System.out.println(randomword(people));
+        //System.out.print("I was" + " " + sentencegenerator(verb) + " " + " " + "down the" + " " + sentencegenerator(places) + " ");
+        //System.out.println("Around" + " " + sentencegenerator(times) + " " + "with my bestfriend" + " " + sentencegenerator(people) + " ");
+       // System.out.print("And we" + " " + sentencegenerator(verb) + " " + " " + "a" + " " + sentencegenerator(adjectives) + " " + " " + sentencegenerator(things) + " ");
+     //   System.out.print("That was" + " " + sentencegenerator(verb) + " " + sentencegenerator(things) + " ");
+        String[] part1 ={"big","little","lil",};
+        String[] part2 ={"salt","diidly","slick",};
+        String[] part3 ={"peppa","blow","daddy",};
+        System.out.println(print80srappername(part1)+" "+print80srappername(part2)+" "+print80srappername(part3));
+
 
     }
 
@@ -151,6 +156,7 @@ System.out.print("That was"+" "+sentencegenerator(verb)+" "+sentencegenerator(th
 
 
     }
+
     public static String randomword(String[] array) {
         Random random = new Random();
         return array[random.nextInt(array.length)];
@@ -158,9 +164,12 @@ System.out.print("That was"+" "+sentencegenerator(verb)+" "+sentencegenerator(th
 
     }
 
+    public static String print80srappername(String[] array) {
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
 
+    }
 }
-
 
 
 
