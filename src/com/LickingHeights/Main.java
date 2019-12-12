@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -18,14 +20,19 @@ public class Main {
 //        Pattern5();
 //        System.out.println("The sum of the array is "+ sum(array));
 //    System.out.println("The minnimum of the array is " + minnimum(array));
-      //  printArray(array);
+        //  printArray(array);
 //System.out.println("The maximum of the array is "+maximum(array));
-String[]adjectives = {"aggressive","agreeable","ambitious","brave"};
-String [] places = {"Taj mahal","Mt house","Iowa","Ohio "};
-String [] people = {"Barack Obama","Drake","Cheryl","William"};
-String [] verbs = {"steal","Throw","Woke","Tell"};
-String [] times = {"12:45","1:30","4:30","6:30"};
-String [] things = {"Clock","Food","Golf","Football"};
+        String[] adjectives = {"aggressive", "agreeable", "ambitious", "brave"};
+        String[] places = {"Taj mahal", "My house", "Iowa", "Ohio "};
+        String[] people = {"Barack Obama", "Drake", "Cheryl", "William"};
+        String[] verb = {"sound", "dislike", "recognise", "appear"};
+        String[] times = {"12:45", "1:30", "4:30", "6:30"};
+        String[] things = {"Clock", "Food", "Golf", "Football"};
+System.out.println(randomword(people));
+System.out.print("I was"+" "+ sentencegenerator(verb)+" "+" " +"down the"+" "+ sentencegenerator(places)+" ");
+System.out.println("Around"+" "+sentencegenerator(times)+" "+"with my bestfriend"+" "+sentencegenerator(people)+" ");
+System.out.print("And we"+" "+sentencegenerator(verb)+" "+" "+"a"+" "+sentencegenerator(adjectives)+" "+" "+sentencegenerator(things)+" ");
+System.out.print("That was"+" "+sentencegenerator(verb)+" "+sentencegenerator(things)+" ");
 
     }
 
@@ -138,16 +145,27 @@ String [] things = {"Clock","Food","Golf","Football"};
         return maximum;
     }
 
-
-}
-
-
-
-
-
-
-
+    public static String sentencegenerator(String[] array) {
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
 
 
     }
+    public static String randomword(String[] array) {
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
+
+
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
